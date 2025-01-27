@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <span title="wooyo" id="hi">hello</span>
+    <button id="Button">Click here!</button>
+    <span id="bye">bye</span>
+
+    <button style="background-color: aquamarine;" onclick="showAlert()">Click me!</button>
+
+    <script src="joel.js"></script>
+    <script>
+        // Function to show an alert
+        function showAlert() {
+            alert('I love JavaScript.');
+        }
+
+        // Create a new h1 element
+        const abc = document.createElement("h1");
+        // Set its innerHTML
+        abc.innerHTML = "<p>Hello World!</p>";
+        // Append the new element to the body
+        const body = document.getElementById("body");
+        body.appendChild(abc);
+    </script>
+</body>
+</html>
